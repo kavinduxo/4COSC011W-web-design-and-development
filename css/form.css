@@ -1,0 +1,18 @@
+.label {
+    float: left;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.inputs {
+    background-color: #56fcec;
+}
+
+.buttons {
+    background-color: #f52828;
+}
+
+.level {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
