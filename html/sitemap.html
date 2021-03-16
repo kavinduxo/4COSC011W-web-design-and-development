@@ -2,7 +2,7 @@
     <title>Sitemap</title>
 
     <style>
-		#svgSitemap {
+        #svgSitemap {
             background-color: #EDEAE5;
         }
 
@@ -13,7 +13,7 @@
 
         #grad1 #stop2 {
             stop-color: #026670;
-            stop-opacity:1;
+            stop-opacity: 1;
         }
 
         #grad2 #stop1 {
@@ -23,15 +23,15 @@
 
         #grad2 #stop2 {
             stop-color: #FEF9C7;
-            stop-opacity:1;
+            stop-opacity: 1;
         }
 
         #subPagesGroup g:hover g text,
-		#subPagesGroup g:hover text,
+        #subPagesGroup g:hover text,
         #presentationPageGroup:hover g text,
-		#presentationPageGroup:hover text,
+        #presentationPageGroup:hover text,
         #homePageGroup:hover g text,
-		#homePageGroup:hover text  {
+        #homePageGroup:hover text {
             font-weight: bold;
             fill: #026670;
         }
@@ -51,19 +51,20 @@
     <svg id="svgSitemap" width="1350" height="640">
         <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop id="stop1" offset="0%" />
-              <stop id="stop2" offset="100%" />
+                <stop id="stop1" offset="0%" />
+                <stop id="stop2" offset="100%" />
             </linearGradient>
 
             <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop id="stop1" offset="0%" />
                 <stop id="stop1" offset="100%" />
-              </linearGradient>
+            </linearGradient>
         </defs>
-        
+
         <g id="presentationPageGroup">
             <rect x="600" y="30" width="150" height="50" fill="url(#grad1)" />
-            <text fill="#FCE181" font-size="14" x="675" y="60" font-family="Arial" text-anchor="middle">Presentation Page</text>
+            <text fill="#FCE181" font-size="14" x="675" y="60" font-family="Arial" text-anchor="middle">Presentation
+                Page</text>
         </g>
 
         <g id="presentationToHome">
@@ -73,24 +74,28 @@
 
         <g id="homePageGroup">
             <rect x="600" y="140" width="150" height="50" fill="url(#grad1)" />
-            <text fill="#FCE181" font-size="14" x="675" y="170" font-family="Arial" text-anchor="middle">Home Page</text>
+            <text fill="#FCE181" font-size="14" x="675" y="170" font-family="Arial" text-anchor="middle">Home
+                Page</text>
         </g>
 
         <g id="subPagesGroup">
 
             <g id="queryFormGroup">
                 <rect x="100" y="250" width="150" height="50" fill="url(#grad1)" />
-                <text fill="#FCE181" font-size="14" x="175" y="280" font-family="Arial" text-anchor="middle">Query Form</text>
+                <text fill="#FCE181" font-size="14" x="175" y="280" font-family="Arial" text-anchor="middle">Query
+                    Form</text>
             </g>
 
             <g id="buyProductsGroup">
                 <rect x="350" y="250" width="150" height="50" fill="url(#grad1)" />
-                <text fill="#FCE181" font-size="14" x="425" y="280" font-family="Arial" text-anchor="middle">Buy Products</text>
+                <text fill="#FCE181" font-size="14" x="425" y="280" font-family="Arial" text-anchor="middle">Buy
+                    Products</text>
             </g>
 
             <g id="whereToGoGroup">
                 <rect x="600" y="250" width="150" height="50" fill="url(#grad1)" />
-                <text fill="#FCE181" font-size="14" x="675" y="280" font-family="Arial" text-anchor="middle">Where To Go</text>
+                <text fill="#FCE181" font-size="14" x="675" y="280" font-family="Arial" text-anchor="middle">Where To
+                    Go</text>
             </g>
 
             <g id="quizGroup">
@@ -100,7 +105,8 @@
 
             <g id="studentDetailsGroup">
                 <rect x="1100" y="250" width="150" height="50" fill="url(#grad1)" />
-                <text fill="#FCE181" font-size="14" x="1175" y="280" font-family="Arial" text-anchor="middle">Student Details</text>
+                <text fill="#FCE181" font-size="14" x="1175" y="280" font-family="Arial" text-anchor="middle">Student
+                    Details</text>
             </g>
         </g>
 
@@ -134,32 +140,32 @@
 
     <script>
         document.getElementById("presentationPageGroup").
-        addEventListener("click", function() {
-            document.location.href="index.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "index.html";
+            });
         document.getElementById("homePageGroup").
-            addEventListener("click", function() {
-                document.location.href="homepage.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "homepage.html";
+            });
         document.getElementById("queryFormGroup").
-            addEventListener("click", function() {
-                document.location.href="queryForm.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "queryForm.html";
+            });
         document.getElementById("buyProductsGroup").
-            addEventListener("click", function() {
-                document.location.href="buyProducts.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "buyProducts.html";
+            });
         document.getElementById("whereToGoGroup").
-            addEventListener("click", function() {
-                document.location.href="wherToGo.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "wherToGo.html";
+            });
         document.getElementById("quizGroup").
-            addEventListener("click", function() {
-                document.location.href="quiz.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "quiz.html";
+            });
         document.getElementById("studentDetailsGroup").
-            addEventListener("click", function() {
-                document.location.href="studentDetails.html";
-        });
+            addEventListener("click", function () {
+                document.location.href = "studentDetails.html";
+            });
     </script>
 </body>
