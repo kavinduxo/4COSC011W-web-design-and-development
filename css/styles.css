@@ -16,6 +16,7 @@ a {
     background-color: #026670;
     color: white;
     border: 0;
+    height: 35px;
 }
 
 .btn:hover {

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/form.css">
 </head>
 
-
 <body>
     <nav>
         <div class="logo">
@@ -27,59 +26,72 @@
 
     <h1>Query Form</h1>
 
-    <form>
-        <fieldset class="inputs">
-            <legend>Query Details</legend>
+    <form class="query-form" id="query-form">
 
-            <div class="content">
-                <div>
-                    <div class="label">Name:</div>
-                    <input type="text" id="txt-fname" placeholder="Enter your name" />
-                </div>
-                <div>
-                    <div class="label">Email Address:</div>
-                    <input type="email" id="txt-email" placeholder="Enter your email" />
-                </div>
-                <div>
-                    <div class="label">Details:</div>
-                    <textarea id="details"></textarea>
-                </div>
-                <div class="theme">
-                    <label>Theme:</label><br>
-                    <input type="radio" name="theme" value="travel" />
-                    <label for="travel" class="label">Travel</label><br>
-                    <input type="radio" name="theme" value="accommodation" />
-                    <label for="accommodation" class="label">Accommodation</label><br>
-                    <input type="radio" name="theme" value="meal" />
-                    <label for="meal" class="label">Meal</label><br>
-                </div>
-                <div>
-                    <div class="label">Any Comments:</div>
-                    <textarea type="text" id="txt-comments"></textarea>
-                </div>
-                <div>
-                    <div class="label">Course:</div>
-                    <select name="course" id="course" class="txt-course">
-                        <option value="cs">Computer Science</option>
-                        <option value="se">Software Engineering</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="label">Terms and Conditions:</div>
-                    <input type="checkbox" id="txt-terms" />
-                </div>
+        <div class="left">
+            <div class="item">
+                <div class="label"><span>*</span> Name:</div>
+                <input class="input" type="text" id="txt-name" placeholder="Enter your name" />
             </div>
-        </fieldset>
+            <div class="item">
+                <div class="label"><span>*</span> Email Address:</div>
+                <input class="input" type="email" id="txt-email" placeholder="Enter your email" />
+            </div>
+            <div class="item">
+                <div class="label"><span>*</span> Query Subject:</div>
+                <input class="input" type="text" id="txt-subject" placeholder="Enter query subject" />
+            </div>
+            <div class="item">
+                <div class="label"><span>*</span> Query Details:</div>
+                <textarea class="input-area" id="txt-query"></textarea>
+            </div>
+        </div>
 
-        <fieldset class="buttons">
-            <div>
-                <button type="submit" id="btn-submit">Submit</button>
-                <button type="reset" id="btn-reset">Reset</button>
+        <div class="right">
+
+            <div class="theme item">
+                <label><span>*</span> Theme:</label><br><br>
+
+                <label for="travel" class="radio-label">Travel</label>
+                <input id="r1" type="radio" name="theme" value="travel" /><br>
+
+                <label for="accommodation" class="radio-label">Accommodation</label>
+                <input id="r2" type="radio" name="theme" value="accommodation" /><br>
+
+                <label for="meal" class="radio-label">Meal</label>
+                <input id="r3" type="radio" name="theme" value="meal" /><br>
+
             </div>
-        </fieldset>
+            <button class="btns item" type="button" id="btn-view">View Query</button>
+            <button class="btns item" type="reset" id="btn-reset">Reset</button>
+        </div>
+
     </form>
 
+    <div id="summary" class="summary hidden">
 
+        <div class="s-content">
+            <label>Name:</label>
+            <input id="s-name" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Email:</label>
+            <input id="s-email" class="s-input" type="email" readonly="readonly" /><br>
+
+            <label>Subject:</label>
+            <input id="s-subject" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Theme:</label>
+            <input id="s-theme" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Description:</label>
+            <textarea id="s-query" class="s-input-area" readonly="readonly"></textarea><br>
+
+            <button class="btns item" type="button" id="btn-edit">Edit</button>
+            <button class="btns item" type="button" id="btn-send">Send</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/form.js"></script>
 </body>
 
 </html>
