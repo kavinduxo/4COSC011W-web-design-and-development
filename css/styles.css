@@ -1,0 +1,45 @@
+.home-page {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px 0 10px 0;
+    margin: 0 0 70% 0;
+    background-color: #026670;
+    color: white;
+    border: 0;
+    height: 35px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #026670;
+}
+
+.content {
+    padding: 5% 20% 10% 10%;
+}
+
+.left {
+    float: left;
+    height: 200%;
+    margin: 0 10% 0 0;
+}
+
+.right {
+    height: 100%;
+    color: #026670;
+}
+
+.right>h1 {
+    color: #026670;
+}

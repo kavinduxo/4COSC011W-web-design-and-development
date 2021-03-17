@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Serandib</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4><a href="../index.html">SERANDIB</a></h4>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">About</a> </li>
+            <li><a href="#">Quiz</a> </li>
+            <li><a href="product-page.html">Shop</a> </li>
+            <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
+        </ul>
+    </nav>
+
+    <h1>Query Form</h1>
+
+    <form class="query-form" id="query-form">
+
+        <div class="left">
+            <div class="item">
+                <div class="label"><span>*</span> Name:</div>
+                <input class="input" type="text" id="txt-name" placeholder="Enter your name" />
+            </div>
+            <div class="item">
+                <div class="label"><span>*</span> Email Address:</div>
+                <input class="input" type="email" id="txt-email" placeholder="Enter your email" />
+            </div>
+            <div class="item">
+                <div class="label"><span>*</span> Query Subject:</div>
+                <input class="input" type="text" id="txt-subject" placeholder="Enter query subject" />
+            </div>
+            <div class="item">
+                <div class="label"><span>*</span> Query Details:</div>
+                <textarea class="input-area" id="txt-query"></textarea>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="theme item">
+                <label><span>*</span> Theme:</label><br><br>
+
+                <label for="travel" class="radio-label">Travel</label>
+                <input id="r1" type="radio" name="theme" value="travel" /><br>
+
+                <label for="accommodation" class="radio-label">Accommodation</label>
+                <input id="r2" type="radio" name="theme" value="accommodation" /><br>
+
+                <label for="meal" class="radio-label">Meal</label>
+                <input id="r3" type="radio" name="theme" value="meal" /><br>
+
+            </div>
+            <button class="btns item" type="button" id="btn-view">View Query</button>
+            <button class="btns item" type="reset" id="btn-reset">Reset</button>
+        </div>
+
+    </form>
+
+    <div id="summary" class="summary hidden">
+
+        <div class="s-content">
+            <label>Name:</label>
+            <input id="s-name" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Email:</label>
+            <input id="s-email" class="s-input" type="email" readonly="readonly" /><br>
+
+            <label>Subject:</label>
+            <input id="s-subject" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Theme:</label>
+            <input id="s-theme" class="s-input" type="text" readonly="readonly" /><br>
+
+            <label>Description:</label>
+            <textarea id="s-query" class="s-input-area" readonly="readonly"></textarea><br>
+
+            <button class="btns item" type="button" id="btn-edit">Edit</button>
+            <button class="btns item" type="button" id="btn-send">Send</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/form.js"></script>
+</body>
+
+</html>

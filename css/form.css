@@ -1,0 +1,93 @@
+body>h1 {
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+.query-form {
+    margin: 0 5% 0 5%;
+    border: #026670 1px solid;
+    font-size: 20px;
+}
+
+.btns {
+    width: 150px;
+    height: 35px;
+    background-color: #026670;
+    color: white;
+    border: 0;
+}
+
+.btns:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #026670;
+}
+
+.left {
+    float: left;
+    margin: 3% 15% 3% 15%;
+}
+
+.right {
+    float: right;
+    color: black;
+    margin: 3% 15% 3% 0;
+}
+
+.item {
+    margin: 10% 0 10% 0;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.input {
+    width: 300px;
+    height: 30px;
+}
+
+.input-area {
+    width: 300px;
+    height: 80px;
+}
+
+span {
+    color: red;
+}
+
+.radio-label {
+    min-width: 200px;
+}
+
+body {
+    background-color: rgba(159, 237, 215, 0.2);
+}
+
+.hidden {
+    display: none;
+}
+
+.summary{
+    border: #026670 1px solid;
+    margin: 0 10% 5% 10%;
+    text-align: center;
+    padding: 5% 0 0 0;
+    font-size: 20px;
+}
+
+#summary label {
+    width:200px;
+    display:inline-block
+}
+
+.s-input{
+    width: 300px;
+    height: 30px;
+    margin: 0 0 2% 0;
+}
+
+.s-input-area{
+    width: 300px;
+    height: 80px;
+}
