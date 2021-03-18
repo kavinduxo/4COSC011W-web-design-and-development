@@ -1,0 +1,149 @@
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ebf0d8;
+}
+
+#team-name{
+    padding-top: 2%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(4, 99, 99);
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    padding-top: 3%;
+    padding-left: 15%;
+}
+.title {
+    color: grey;
+}
+
+.contact-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(9, 65, 117);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: rgb(181, 219, 236);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.dev-card:hover .img-container .dp {
+    border-radius:10%;
+}
+
+.dev-card .img-container .dp{
+    width: 100%;
+    height: 10cm;
+    border-radius:50%;
+}
+.dev-card  .container{
+    padding: 0 16px;
+    opacity: 0;
+    
+}
+.dev-card:hover .container{
+    padding: 0 16px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.dev-card .img-container .left-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #8ecadf;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+
+  .dev-card .img-container .img-button {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    padding: auto;
+  }
+
+  .dev-card:hover .img-container .left-overlay {
+    width: 20%;
+  }
+ 
+  .img-container {
+    position: relative;
+    border-radius: 10%;
+  }
+  
+  .dev-card:hover .img-container{
+    width: 100%;
+  }
+
+ .container p{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size:medium;
+ } 
+ .media-btns a {
+    padding-left: 5%;
+    padding-top: 15%;
+    width: 50%; 
+    display: block;
+  }
+  
+  .media-btns a:not(:last-child) {
+    border-bottom: none;
+  }
