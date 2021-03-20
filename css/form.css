@@ -52,7 +52,7 @@ body>h1 {
     height: 80px;
 }
 
-span {
+.required {
     color: red;
 }
 
@@ -68,7 +68,7 @@ body {
     display: none;
 }
 
-.summary{
+.summary {
     border: #026670 1px solid;
     margin: 0 10% 5% 10%;
     text-align: center;
@@ -77,17 +77,17 @@ body {
 }
 
 #summary label {
-    width:200px;
-    display:inline-block
+    width: 200px;
+    display: inline-block
 }
 
-.s-input{
+.s-input {
     width: 300px;
     height: 30px;
     margin: 0 0 2% 0;
 }
 
-.s-input-area{
+.s-input-area {
     width: 300px;
     height: 80px;
 }
