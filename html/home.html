@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Serandib</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 
 
-<body class="home-page">
+<body class="body">
 
     <nav>
         <div class="logo">
@@ -17,25 +18,26 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="index.html">Home</a> </li>
-            <li><a href="html/about-us.html">About</a> </li>
-            <li><a href="html/where-to-go.html">Destinations</a></li>
+            <li><a href="#">Home</a> </li>
+            <li><a href="about-us.html">About</a> </li>
+            <li><a href="where-to-go.html">Destinations</a></li>
             <li><a href="#">Quiz</a> </li>
-            <li><a href="html/product-page.html">Shop</a> </li>
-            <li><a href="html/cart.html">Cart <span class="cart-items">0</span> </a> </li>
+            <li><a href="product-page.html">Shop</a> </li>
+            <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
         </ul>
     </nav>
 
     <div class="content">
 
-        <div class="left">
-            <a href="html/sitemap.html"><button class="btn">Site Map</button></a><br>
-            <a href="html/product-page.html"><button class="btn">Quiz</button></a><br>
-            <a href="html/form.html"><button class="btn">Form</button></a><br>
+        <div class="float-child l">
+            <ul class="btn-group">
+                <li><a href="sitemap.html"><button class="btn">Site Map</button></a></li>
+                <li><a href="product-page.html"><button class="btn">Product Page</button></a></li>
+                <li><a href="form.html"><button class="btn">Form</button></a></li>
+            </ul>
         </div>
 
-        <div class="right">
-
+        <div class="float-child r">
             <h1>Sri Lanka</h1>
             <p>A myriad of cultures, religions, landscapes, climates, and food, Sri Lanka feels like countless countries
                 rolled into one. Because of this, travelers can experience an incredible diversity in landscapes within
@@ -71,6 +73,20 @@
         </div>
 
     </div>
+
+    <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+
+        <p class="copyright"> The RISK <i class="far fa-copyright"></i> 2021</p>
+
+        <button class="btn"><a href="#">Editors</a></button>
+
+    </footer>
 
 </body>
 
