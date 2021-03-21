@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .content {
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .page-title {
+        margin-top: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 40px;
+        margin-left: 800px;
+        margin-right: 800px;
+        border-style: solid;
+    }
+
+    .team-members {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 800px;
+        margin-right: 800px;
+    }
+</style>
+
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+    <source src="../img/Sri%20Lanka.mp4" type="video/mp4">
+</video>
+<div class="content">
+    <div class="page-title">
+        SERANDIB
+    </div>
+    <div class="team-members">
+        <table>
+            <tr><td><h2>Sadesh Surendra</h2></td></tr>
+            <tr><td><h2>Kavindu Gunathilaka</h2></td></tr>
+            <tr><td><h2>Ravindu Rasanjana</h2></td></tr>
+            <tr><td><h2>Infaz Rumy</h2></td></tr>
+        </table>
+    </div>
+
+</div>
+
+<script>
+    setTimeout(function(){
+        window.location.href = '../html/home.html';
+    }, 7000);
+</script>
+</body>
+</html>
+
