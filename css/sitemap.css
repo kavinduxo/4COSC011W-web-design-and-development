@@ -1,0 +1,42 @@
+#svgSitemap {
+    background-color: #EDEAE5;
+}
+
+#grad1 #stop1 {
+    stop-color: #9FEDD7;
+    stop-opacity: 1;
+}
+
+#grad1 #stop2 {
+    stop-color: #026670;
+    stop-opacity: 1;
+}
+
+#grad2 #stop1 {
+    stop-color: #FCE181;
+    stop-opacity: 1;
+}
+
+#grad2 #stop2 {
+    stop-color: #FEF9C7;
+    stop-opacity: 1;
+}
+
+#subPagesGroup g:hover g text,
+#subPagesGroup g:hover text,
+#presentationPageGroup:hover g text,
+#presentationPageGroup:hover text,
+#homePageGroup:hover g text,
+#homePageGroup:hover text {
+    font-weight: bold;
+    fill: #026670;
+}
+
+#subPagesGroup g:hover rect,
+#subPagesGroup g:focus rect,
+#presentationPageGroup:hover rect,
+#presentationPageGroup:focus rect,
+#homePageGroup:hover rect,
+#homePageGroup:focus rect {
+    fill: url(#grad2);
+}
