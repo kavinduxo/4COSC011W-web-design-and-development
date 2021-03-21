@@ -1,5 +1,9 @@
 import { productsInCart, totalCartCost } from './product.js';
 
+/*
+* On loading the product page set the cart items to the selected items
+*
+*/
 function onLoadCartItems() {
     let productQuantity = sessionStorage.getItem('productQuantity');
 
