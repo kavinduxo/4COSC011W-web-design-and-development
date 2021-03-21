@@ -69,3 +69,55 @@ document.getElementById('figureWP').addEventListener('mouseover', function(){
 document.getElementById('figureWP').addEventListener('mouseleave', function(){
     document.getElementById('WP').style.display = "none";
 })
+
+function changeBackgroundColorIntoDarkMode() {
+    document.body.style.backgroundColor = "#52504e";
+    for(var i = 0; i < document.getElementsByClassName('drp-btn').length; i++) {
+        document.getElementsByClassName('drp-btn')[i].style.backgroundColor = "#9fedd7";
+    }
+    for(var i = 0; i < document.getElementsByClassName('des').length; i++) {
+        document.getElementsByClassName('des')[i].style.backgroundColor = "#52504e";
+        document.getElementsByClassName('des')[i].style.borderColor = "#52504e";
+    }
+}
+
+function changeBackgroundColorIntoLightMode() {
+    document.body.style.backgroundColor = "#ebf0d8";
+    for(var i = 0; i < document.getElementsByClassName('drp-btn').length; i++) {
+        document.getElementsByClassName('drp-btn')[i].style.backgroundColor = "#026670";
+    }
+    for(var i = 0; i < document.getElementsByClassName('des').length; i++) {
+        document.getElementsByClassName('des')[i].style.backgroundColor = "#ebf0d8";
+        document.getElementsByClassName('des')[i].style.borderColor = "#ebf0d8";
+    }
+}
+
+function changeTextColorIntoDarkMode() {
+    for(var i = 0; i < document.getElementsByClassName('prov-name').length; i++) {
+        document.getElementsByClassName('prov-name')[i].style.color = "white";
+    }
+    for(var i = 0; i < document.getElementsByClassName('drp-btn').length; i++) {
+        document.getElementsByClassName('drp-btn')[i].style.color = "black";
+    }
+    for(var i = 0; i < document.getElementsByClassName('prov-header').length; i++) {
+        document.getElementsByClassName('prov-header')[i].style.color = "#9fedd7";
+    }
+    for(var i = 0; i < document.getElementsByClassName('prov-des').length; i++) {
+        document.getElementsByClassName('prov-des')[i].style.color = "white";
+    }
+}
+
+function changeTextColorIntoLightMode() {
+    for(var i = 0; i < document.getElementsByClassName('prov-name').length; i++) {
+        document.getElementsByClassName('prov-name')[i].style.color = "black";
+    }
+    for(var i = 0; i < document.getElementsByClassName('drp-btn').length; i++) {
+        document.getElementsByClassName('drp-btn')[i].style.color = "white";
+    }
+    for(var i = 0; i < document.getElementsByClassName('prov-header').length; i++) {
+        document.getElementsByClassName('prov-header')[i].style.color = "#026670";
+    }
+    for(var i = 0; i < document.getElementsByClassName('prov-des').length; i++) {
+        document.getElementsByClassName('prov-des')[i].style.color = "black";
+    }
+}

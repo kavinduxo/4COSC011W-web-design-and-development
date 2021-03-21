@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Where to go</title>
+    <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/where-to-go.css">
@@ -12,62 +13,79 @@
 <body>
     <nav>
         <div class="logo">
-            <h4><a href="../index.html">SERANDIB</a></h4>
+            <h4><a href="home.html">SERANDIB</a></h4>
         </div>
 
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a> </li>
+            <li><a href="home.html">Home</a> </li>
             <li><a href="about-us.html">About</a> </li>
-            <li><a href="where-to-go.html">Destinations</a></li>
+            <li><a href="#">Destinations</a></li>
             <li><a href="#">Quiz</a> </li>
             <li><a href="product-page.html">Shop</a> </li>
             <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
         </ul>
     </nav>
 
+    <div class="page-edit">
+        <div class="drp" id="drp-bck-color">
+            <button class="drp-btn">Background</button>
+            <div id="bck-drp-content" class="drp-content">
+                <button onclick="changeBackgroundColorIntoDarkMode()">Dark Mode</button>
+                <button onclick="changeBackgroundColorIntoLightMode()">Light Mode</button>
+            </div>
+        </div>
+        <div class="drp" id="drp-txt-color">
+            <button class="drp-btn">Text</button>
+            <div id="txt-drp-content" class="drp-content">
+                <button onclick="changeTextColorIntoDarkMode()">Dark Mode</button>
+                <button onclick="changeTextColorIntoLightMode()">Light Mode</button>
+            </div>            
+        </div>
+    </div>
+
     <div class="gallery">
         <figure id="figureCP">
             <img id="first-child" src="../img/Destinations/CentralProvince/CPT.jpg" alt="Central Province">
-            <figcaption>Central<br>Province</figcaption>
+            <figcaption class="prov-name">Central<br>Province</figcaption>
         </figure>
         <figure id="figureEP">
             <img src="../img/Destinations/EasternProvince/EPT.jpg" alt="Eastern Province">
-            <figcaption>Eastern<br>Province</figcaption>
+            <figcaption class="prov-name">Eastern<br>Province</figcaption>
         </figure>
         <figure id="figureNCP">
             <img src="../img/Destinations/NorthCentralProvince/NCPT.jpg" alt="North Central Province">
-            <figcaption>North Central<br>Province</figcaption>
+            <figcaption class="prov-name">North Central<br>Province</figcaption>
         </figure>
         <figure id="figureNWP">
             <img src="../img/Destinations/NorthWesternProvince/NWPT.jpg" alt="North Western Province">
-            <figcaption>North Western<br>Province</figcaption>
+            <figcaption class="prov-name">North Western<br>Province</figcaption>
         </figure>
         <figure id="figureNP">
             <img src="../img/Destinations/NothernProvince/NPT.jpg" alt="Nothern Province">
-            <figcaption>Northern<br>Province</figcaption>
+            <figcaption class="prov-name">Northern<br>Province</figcaption>
         </figure>
         <figure id="figureSaP">
             <img src="../img/Destinations/SabaragamuwaProvince/SaPT.jpg" alt="Sabaragamuwa Province">
-            <figcaption>Sabaragamuwa<br>Province</figcaption>
+            <figcaption class="prov-name">Sabaragamuwa<br>Province</figcaption>
         </figure>
         <figure id="figureSP">
             <img src="../img/Destinations/SouthernProvince/SPT.jpg" alt="Southern Province">
-            <figcaption>Southern<br>Province</figcaption>
+            <figcaption class="prov-name">Southern<br>Province</figcaption>
         </figure>
         <figure id="figureUP">
             <img src="../img/Destinations/UvaProvince/UPT.jpg" alt="Uva Province">
-            <figcaption>Uva<br>Province</figcaption>
+            <figcaption class="prov-name">Uva<br>Province</figcaption>
         </figure>
         <figure id="figureWP">
             <img id="last-child" src="../img/Destinations/WesternProvince/WPT.jpg" alt="Western Province">
-            <figcaption>Western<br>Province</figcaption>
+            <figcaption class="prov-name">Western<br>Province</figcaption>
         </figure>
     </div>
 
     <div id="CP" class="provinceDes">
-        <div class="content">
-            <h1>Central Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Central Province</h1>
+            <p class="prov-des">
                 The Central Province has an area of 5,674 square kilometers and consits of Kandy, Mathale and Nuwaraeliya districts.
                 Religious places like Temple of tooth and Ambuluawa Temple, Peradeniya botnical garden, some beautiful citis like Kandalama and Mahiyanganaya, 
                 Ambewela Farms, Kotmale dams, Devon, Kadiyanlena waterfalls are located in this province. 
@@ -81,9 +99,9 @@
         </div>
     </div>
     <div id="EP" class="provinceDes">
-        <div class="content">
-            <h1>Eastern Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Eastern Province</h1>
+            <p class="prov-des">
                 The Eastern Province has an area of 9,996 square kilometers and consists of Ampara, Batticaloa and Trincomalee districts.
                 Beautiful beaches like Arugambay, Nilaveli and Pasikuda, Frederick and Batticaloa Dutch Forts, Kanniya hot water springs,
                 wild life sanctuaries of Kudumbigala, Lahugala Kitulana and Seruwawila and Muhudu maha viharaya are located in here.    
@@ -97,9 +115,9 @@
         </div>
     </div>
     <div id="NCP" class="provinceDes">
-        <div class="content">
-            <h1>North Central Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">North Central Province</h1>
+            <p class="prov-des">
                 The North Central Province has an area of 10,472 square kilometers and consists of Anuradhapura and Polonnaruwa districts.
                 This is the most important province for the buddhists because Sri Maha Bodhiya, Thuparamaya Temple, Ruwanwalisaya Temple are located in here.
                 Other than that Minneriya, Kaudulla National parks, Parakrama Samudraya are also located in here.
@@ -113,9 +131,9 @@
         </div>
     </div>
     <div id="NWP" class="provinceDes">
-        <div class="content">
-            <h1>North Western Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">North Western Province</h1>
+            <p class="prov-des">
                 The North Western Province (Area - 7,888 square kilometes) is a treasure trove of archaeology, 
                 having served as the capital of four medieval kingdoms of Sri Lanka between the mid-12th and mid-14th centuries. 
                 Despite being forced to switch capitals regularly due to foreign invasion, 
@@ -130,9 +148,9 @@
         </div>
     </div>
     <div id="NP" class="provinceDes">
-        <div class="content">
-            <h1>Nothern Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Nothern Province</h1>
+            <p class="prov-des">
                 The Nothern Province has an are of 8,884 sqare kilometers and consists of Jaffna, Kilinochchi, Mannar, Mullaitivu, Vavuniya districts.
                 Fort Jaffna, Arippu Dutch Fort, some religious places like Nainativu, Nallur, Nagha Deepa, St. Mary's Cathedral,
                 Alimankada or Elephantpass which has an important military base and some beautiful beaches like Kokkilai, Arisimale, Thalvupadu are located at this province. 
@@ -146,9 +164,9 @@
         </div>
     </div>
     <div id="SaP" class="provinceDes">
-        <div class="content">
-            <h1>Sabaragamuwa Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Sabaragamuwa Province</h1>
+            <p class="prov-des">
                 The Sabaragamuwa Province has an area of 4,968 square kilometers and consists of Kegalle Ratnapura districts.
                 Pinnawala zoo and elephant orphanage, Sri padaya which is also known as Adam's peak, 
                 some important historical places like Batathombalena, Belilena caves, Bopath Pahanthuduwa and Duwili waterfalls are located in this province.                
@@ -162,9 +180,9 @@
         </div>
     </div>
     <div id="SP" class="provinceDes">
-        <div class="content">
-            <h1>Southern Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Southern Province</h1>
+            <p class="prov-des">
                 The Southern Province (Area of 5,544 square kilometers) is one of Sri Lanka's nine provinces, and it is visited by both locals and foreigners. 
                 Galle, Matara, and Hambantota are the districts that make up the province. 
                 The wildlife sanctuaries of Yala National Park, the holy city of Kataragama, and the ancient cities of Tissamaharama, Kirinda, and Galle are all worth visiting.
@@ -178,9 +196,9 @@
         </div>
     </div>
     <div id="UP" class="provinceDes">
-        <div class="content">
-            <h1>Uva Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Uva Province</h1>
+            <p class="prov-des">
                 The Uva Province has an area of 8,500 square kilometers and consists of Badulla and Monaragala districts.
                 The wildlife sanctuaries of Udawalawa Kumana National Parks, Ella which is foriegners' one of a favourite places in Srilanka and Diyaluma, 
                 Bambarakanda waterfalls, Hortan plains and some historical temples such as Muthiyanganaya, bogoda are located in this beautiful province. 
@@ -194,9 +212,9 @@
         </div>
     </div>
     <div id="WP" class="provinceDes">
-        <div class="content">
-            <h1>Western Province</h1>
-            <p>
+        <div class="des">
+            <h1 class="prov-header">Western Province</h1>
+            <p class="prov-des">
                 The Western Province which has an area of 3782 square kilometers, there are a variety of possible tourist destinations.
                 The province consists of Colombo, Kaluthara, Gampaha and it serves as the country's economic and administrative center, 
                 and it is home to main access points such as the Colombo port and the international airport, both of which are vital to tourism.
@@ -209,6 +227,17 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+        <p class="copyright"> The RISK <i class="far fa-copyright"></i> 2021</p>
+        <button class="btn"><a href="#">Editors</a></button>
+    </footer>
 
     <script type="text/javascript" src="../js/where-to-go.js"></script>
 </body>
