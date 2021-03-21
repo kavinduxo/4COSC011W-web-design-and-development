@@ -48,6 +48,33 @@
         margin-left: 800px;
         margin-right: 800px;
     }
+
+    p{
+        color: #ffffff;
+        font-size: 30px;
+        text-align:  justify-all;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40em;
+        animation: type 3s steps(60, end);
+    }
+
+    p:nth-child(2){
+        animation: type 5s steps(60, end);
+    }
+
+    p:nth-child(3){
+        animation: type 7s steps(60, end);
+    }
+
+    p:nth-child(4){
+        animation: type 9s steps(60, end);
+    }
+
+    @keyframes type{
+        from { width: 0; }
+    }
+
 </style>
 
 </head>
@@ -60,12 +87,10 @@
         SERANDIB
     </div>
     <div class="team-members">
-        <table>
-            <tr><td><h2>Sadesh Surendra</h2></td></tr>
-            <tr><td><h2>Kavindu Gunathilaka</h2></td></tr>
-            <tr><td><h2>Ravindu Rasanjana</h2></td></tr>
-            <tr><td><h2>Infaz Rumy</h2></td></tr>
-        </table>
+        <p class='css-typing'>Sadesh Surendra</p>
+        <p class='css-typing'>Kavindu Gunathilaka</p>
+        <p class='css-typing'>Ravindu Rasanjana</p>
+        <p class='css-typing'>Infaz Rumy</p>
     </div>
 
 </div>

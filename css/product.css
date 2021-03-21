@@ -1,5 +1,6 @@
 body {
     background-color: #ebf0d8;
+    position: absolute;
 }
 
 .cards {
@@ -121,5 +122,16 @@ body {
 
 .product-price-btn button:hover {
     background-color: #79b0a1;
+}
+
+
+#footer-product{
+    position: fixed;
+    width: 100%;
+    clear: both;
+    background-color: #35544d;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 20% 1% 20%;
 }
 
