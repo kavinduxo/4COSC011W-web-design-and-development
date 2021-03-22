@@ -27,6 +27,19 @@ function setSummary() {
     document.getElementById("s-theme").value = checkedValue();
 }
 
+function validateEmail(email) {
+
+    let atSymbol = email.indexOf("@");
+    if (atSymbol < 1) return false;
+
+    let dot = email.indexOf(".");
+    if (dot <= atSymbol + 2) return false;
+
+    if (dot === email.length - 1) return false;
+
+    return true;
+}
+
 btnView.onclick = function () {
     fields = []
     let txtName = document.getElementById("txt-name").value;
@@ -47,13 +60,16 @@ btnView.onclick = function () {
             message += "\n     - " + element;
         });
         alert(message);
-    } else {
+    } else if (validateEmail(txtEmail)) {
+
         let form = document.getElementById("query-form");
         form.classList.add("hidden");
         let summary = document.getElementById("summary");
         summary.classList.remove("hidden");
         setSummary();
 
+    } else {
+        alert("Please enter a valid email.");
     }
 }
 
