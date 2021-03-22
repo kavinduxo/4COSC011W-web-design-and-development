@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ebf0d8;
     position: absolute;
@@ -48,8 +54,7 @@ body {
     color: #474747;
 }
 
-.product-text h1,
-.product-price-btn p {
+.product-text h1, .product-price-btn p {
     font-family: 'Bentham', serif;
 }
 
@@ -124,8 +129,7 @@ body {
     background-color: #79b0a1;
 }
 
-
-#footer-product{
+#footer-product {
     position: fixed;
     width: 100%;
     clear: both;
@@ -134,4 +138,3 @@ body {
     justify-content: space-between;
     padding: 1% 20% 1% 20%;
 }
-
