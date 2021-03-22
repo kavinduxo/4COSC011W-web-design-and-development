@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #ebf0d8;
+    background-color: #ebf0d8;
 }
 
 .student-details {
@@ -16,9 +22,9 @@ body {
 .student-card {
     background-color: #474e5d;
     margin-left: 15%;
-	display: grid;
-	grid-template-columns: 30% 70%;
-	flex-flow: column;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    flex-flow: column;
     margin-top: 3%;
     width: 70vw;
     padding: 1%;
