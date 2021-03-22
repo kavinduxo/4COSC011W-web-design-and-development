@@ -1,0 +1,45 @@
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-title {
+    margin-top: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 800px;
+    margin-right: 800px;
+    border-style: solid;
+}
+
+.group {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 800px;
+    margin-right: 800px;
+    font-size:30px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    width: 500px;
+}

@@ -5,77 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-<style>
+    <link rel="stylesheet" href="./css/index.css">
 
-    #myVideo {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    .content {
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .page-title {
-        margin-top: 100px;
-        line-height: 100px;
-        text-align: center;
-        font-size: 40px;
-        margin-left: 800px;
-        margin-right: 800px;
-        border-style: solid;
-    }
-
-    .team-members {
-        position: absolute;
-        margin-top: 200px;
-        margin-left: 800px;
-        margin-right: 800px;
-    }
-
-    p{
-        color: #ffffff;
-        font-size: 30px;
-        text-align:  justify-all;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 40em;
-        animation: type 3s steps(60, end);
-    }
-
-    p:nth-child(2){
-        animation: type 5s steps(60, end);
-    }
-
-    p:nth-child(3){
-        animation: type 7s steps(60, end);
-    }
-
-    p:nth-child(4){
-        animation: type 9s steps(60, end);
-    }
-
-    @keyframes type{
-        from { width: 0; }
-    }
-
-</style>
+    <title>Presentation Page</title>
 
 </head>
 <body>
@@ -86,20 +18,11 @@
     <div class="page-title">
         SERANDIB
     </div>
-    <div class="team-members">
-        <p class='css-typing'>Sadesh Surendra</p>
-        <p class='css-typing'>Kavindu Gunathilaka</p>
-        <p class='css-typing'>Ravindu Rasanjana</p>
-        <p class='css-typing'>Infaz Rumy</p>
+    <div class="group">
+        <div id="typedtext"></div>
     </div>
-
 </div>
-
-<script>
-    setTimeout(function(){
-        window.location.href = './html/home.html';
-    }, 7000);
-</script>
+<script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
 
