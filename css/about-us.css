@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #ebf0d8;
 }
@@ -30,6 +29,7 @@ body {
 
 
 .about-section {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
     text-align: center;
     background-color: #474e5d;
@@ -109,7 +109,7 @@ body {
 
   .dev-card .img-container .img-button {
     color: white;
-    font-size: 50px;
+    font-size: 200%;
     position: absolute;
     top: 50%;
     left: 50%;
