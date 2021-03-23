@@ -61,10 +61,6 @@ export function productsInCart(product, action){
     let productQuantity = sessionStorage.getItem('productQuantity');
     productQuantity = parseInt(productQuantity);
 
-    //list of the products in the cart
-    let totalProducts = sessionStorage.getItem('productsInCart');
-    totalProducts = JSON.parse(totalProducts);
-
     if(action) {
         sessionStorage.setItem('productQuantity', productQuantity - 1);
     }else if (productQuantity) {
