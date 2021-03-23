@@ -1,16 +1,10 @@
 import { productsInCart, totalCartCost } from './product.js';
 
-/*
-* On loading the product page set the cart items to the selected items
-*
-*/
 function onLoadCartItems() {
     let productQuantity = sessionStorage.getItem('productQuantity');
 
     if(parseInt(productQuantity) === 0){
-        document.getElementById("myBtn").disabled = true;
-    }else {
-        document.querySelector('.cart-items').textContent = productQuantity;
+        document.getElementById("btn").disabled = true;
     }
 }
 

@@ -26,15 +26,32 @@ let products = [
         productPrice: 22,
         productImage: 'img-4.jpg',
         productsInCart: 0
+    },
+    {
+        productTag: 'jaffna-sarom',
+        productName : 'Jaffna Sarom',
+        productPrice: 30,
+        productImage: 'img-5.jpg',
+        productsInCart: 0
+    },
+    {
+        productTag: 'colombo-men',
+        productName : 'Colombo Men',
+        productPrice: 17,
+        productImage: 'img-6.jpg',
+        productsInCart: 0
     }
+
 ]
 
 let productList = document.querySelectorAll('.product-price-btn button');
 
 for(let i = 0; i < productList.length; i++){
+    onLoadCartItems();
     productList[i].addEventListener("click", () => {
         productsInCart(products[i]);
         totalCartCost(products[i]);
+        onLoadCartItems();
     });
 }
 
@@ -50,15 +67,11 @@ export function productsInCart(product, action){
 
     if(action) {
         sessionStorage.setItem('productQuantity', productQuantity - 1);
-        document.querySelector('.cart-items').textContent = productQuantity - 1;
     }else if (productQuantity) {
         sessionStorage.setItem('productQuantity', productQuantity + 1);
-        document.querySelector('.cart-items').textContent = productQuantity + 1;
     }else {
         sessionStorage.setItem('productQuantity', 1);
-        document.querySelector('.cart-items').textContent = 1;
     }
-
     setNumberOfProducts(product);
 }
 
@@ -66,9 +79,10 @@ function onLoadCartItems() {
     let productQuantity = sessionStorage.getItem('productQuantity');
 
     if(productQuantity){
-        document.querySelector('.cart-items').textContent = productQuantity;
+        document.getElementById('cart-items').textContent = productQuantity;
     }
 }
+
 
 function setNumberOfProducts(product) {
 
@@ -111,7 +125,4 @@ export function totalCartCost(product, action){
         sessionStorage.setItem("totalCartCost", product.productPrice);
     }
 }
-
-onLoadCartItems();
-
 

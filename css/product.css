@@ -44,7 +44,7 @@ body {
 
 .product-text {
     height: 300px;
-    width: 327px;
+    width: 300px;
 }
 
 .product-text h1 {
@@ -54,7 +54,8 @@ body {
     color: #474747;
 }
 
-.product-text h1, .product-price-btn p {
+.product-text h1,
+.product-price-btn p {
     font-family: 'Bentham', serif;
 }
 
@@ -69,8 +70,9 @@ body {
 }
 
 .product-text p {
+    text-align: justify;
     height: 125px;
-    margin: 0 0 0 38px;
+    margin: 0 10px 0 38px;
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
     line-height: 1.7em;
@@ -129,12 +131,28 @@ body {
     background-color: #79b0a1;
 }
 
-#footer-product {
-    position: fixed;
-    width: 100%;
-    clear: both;
-    background-color: #35544d;
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 20% 1% 20%;
+.product-title {
+    color: #222121;
+
+    display: inline;
+    margin-left: 250px;
+    padding-right: 50px;
+    font-size: 34px;
+    font-family: 'Bentham', serif;
+}
+
+#cart-items {
+    color: #2f2b2b;
+}
+.product-cart {
+    display: inline;
+    margin-left: 500px;
+}
+
+.foot-lift {
+    margin-bottom: 200px;
+}
+
+.cart {
+    margin-top: 50px;
 }

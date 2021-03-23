@@ -1,6 +1,6 @@
 let modal = document.getElementById("Modal");
 
-let btn = document.getElementById("Btn");
+let btn = document.getElementById("btn");
 
 let span = document.getElementsByClassName("close")[0];
 
@@ -72,51 +72,45 @@ function validateEmail(email) {
     let dot = email.indexOf(".");
     if(dot <= atSymbol + 2) return false;
 
-    if (dot === email.length - 1) return false;
-
-    return true;
+    return dot !== email.length - 1;
 }
 
 function validateContactNumber(contactNumber) {
-    if(contactNumber.length !== 10 || isNaN(contactNumber)){
-        return false;
-    }else {
-        return true;
-    }
+    return !(contactNumber.length !== 10 || isNaN(contactNumber));
 }
-
 
 function displayInvoice(firstName, lastName, email, contactNumber) {
     let productInvoice = document.querySelector('.modal-content')
 
-    productInvoice.innerHTML = `
-            <button id="Btn" onClick="ClearEnv()">Thanks for Shopping</button>
+        productInvoice.innerHTML = `
             <br style="margin-top: 25px">
             <h1>Invoice</h1>
             <hr>
-            <h5>Customer Name: ${firstName +' '+ lastName}</h5>
-            <h5>Customer Mail: ${email}</h5>
-            <h5>Customer Contact Number: ${contactNumber}</h5>
-            <h5>Total Bill: $${sessionStorage.getItem('totalCartCost')}</h5>
+            <h4>Customer Name: ${firstName +' '+ lastName}</h4>
+            <h4>Customer Mail: ${email}</h4>
+            <h4>Customer Contact Number: ${contactNumber}</h4>
+            <h4>Total Bill: $${sessionStorage.getItem('totalCartCost')}</h4>
             <hr>
+            <button id="btn" onclick="ClearEnv()">Thanks for Shopping</button>
             <h3>Break Down</h3>    
             <br>
              
 `;
     Object.values(JSON.parse(sessionStorage.getItem('productsInCart'))).map(item => {
-            productInvoice.innerHTML += `
-            <h5>Product Name:  ${item.productName}</h5>
-            <h5>Product Price: ${item.productPrice}</h5>
-            <h5>Quantity: ${item.productsInCart}</h5>
+        productInvoice.innerHTML += `
+            <h4>Product Name:  ${item.productName}</h4>
+            <h4>Product Price: ${item.productPrice}</h4>
+            <h4>Quantity: ${item.productsInCart}</h4>
             <hr>    
+            
 `;
+        })
 
 
-    });
 }
-
 
 function ClearEnv() {
     sessionStorage.clear();
-    location.reload();
+    sessionStorage.setItem('productQuantity', 0);
+    window.location.href = '../html/home.html';
 }
