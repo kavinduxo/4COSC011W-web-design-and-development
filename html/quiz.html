@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Serendib Quiz min</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/quiz.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,11 +17,11 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a> </li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="about-us.html">About</a> </li>
-            <li><a href="quiz.html">Quiz</a> </li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="#">Quiz</a> </li>
             <li><a href="product-page.html">Shop</a> </li>
-            <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
         </ul>
     </nav>
     <div class="info_box" id="info">
@@ -30,7 +29,8 @@
         <div class="info-list">
             <div class="info">1. Select one from given four answers for each.</div>
             <div class="info">2. You will have only maximum <span>60 seconds</span> for <span>10 questions</span>.</div>
-            <div class="info">3. When the time is over quiz will be stoped and marks will be given for the answerd questions.</div>
+            <div class="info">3. When the time is over quiz will be stoped and marks will be given for the answerd
+                questions.</div>
             <div class="info">4. For every correct answer you will awarded by <span>two marks</span>.</div>
             <div class="info">5. You will be awarded <span>one mark</span> per wrong answer.</div>
             <div class="info">6. You will be grouping to one of three categories based on your performance.</div>
@@ -60,7 +60,8 @@
         <section>
             <div class="scroll-div">
                 <p>
-                    <span>01</span>: Ceylon is famous for best Sapphires and moonstones. Which District based for gem industry ?
+                    <span>01</span>: Ceylon is famous for best Sapphires and moonstones. Which District based for gem
+                    industry ?
                 </p>
                 <input type="radio" name="radio1" id="a1" value="a1" /> Badulla </input>
                 <input type="radio" name="radio1" id="a2" value="a1" /> Kegalle </input>
@@ -154,7 +155,7 @@
             </div>
         </section>
 
-        <footer class="quiz-footer">
+        <footer class="quiz-footer" id="quiz_foot">
             <button class="submit_btn">Submit</button>
         </footer>
     </div>
@@ -163,13 +164,17 @@
         <header class="fixed-header">
             <div class="title" id="res-title">Test Result</div>
         </header>
-        <div class=content id="res-content">
-            <p id="marks">Marks</p>
-            <h2 id="ans-title">Correct Answers</h2>
-              <ul id="ans-list" style="top: 35%; position: absolute;"></ul>
-            <h2 id="corr-title" style="padding-top: 20%;">Corrections</h2>
-              <ul id="corr-list" ></ul>
-        </div>
+
+        <body>
+            <div class=content id="res-content">
+                <p id="marks">Marks</p>
+                <h2 id="ans-title">Correct Answers</h2>
+                  <ul id="ans-list" style="top: 25%; position: absolute;"></ul>
+                <h2 id="corr-title" style="padding-top: 15%;">Corrections</h2>
+                  <ul id="corr-list"></ul>
+            </div>
+        </body>
+
 
         <footer class="res-footer" id="res-footer">
             <div class="foot-btn">
@@ -177,6 +182,17 @@
             </div>
         </footer>
     </div>
+
+    <footer style="width: 75%; height: 7%; padding-left: 10%;">
+        <div class="social-media" ;">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+        <p class="copyright"> The RISK <i class="far fa-copyright"></i> 2021</p>
+        <button class="btn" onclick="location.href='student-three.html'">Editors</button>
+    </footer>
 
     <script src="../js/quiz.js"></script>
 

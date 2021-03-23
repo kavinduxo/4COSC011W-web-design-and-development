@@ -1,8 +1,11 @@
+html{
+    box-sizing: border-box;
+}
 body{
-    background: #cec99b;
+    background-color: #ebf0d8;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 .info_box,
@@ -139,12 +142,17 @@ section{
     position: relative;
 }
 
-footer{
+.quiz-footer, .res-footer, .info-footer footer{
     height: 10%;
     padding-left: 5%;
     display: flex;
     align-items: center;
     border-top: 1px solid lightgrey;
+}
+
+#quiz_foot, #res-footer, #info-footer footer{
+    background-color: rgb(119, 202, 198);
+    width: 75%;
 }
 
 footer button{
@@ -209,6 +217,11 @@ footer button.show{
     box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
 }
 
+#res-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
 .fixed-header, .fixed-footer{
     position: absolute;        
     padding: 10px 0;
@@ -234,6 +247,7 @@ footer button.show{
 .fixed-footer, #info-footer, #res-footer{
     width: 100%;
     bottom: 0;
+    height: 10%;
 }  
 
 .info-footer .foot-btn{
@@ -262,9 +276,18 @@ footer button.show{
     font-size: larger;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-left: 20%;
 }
 
 .scroll-div span{
     font-weight: 650;
     color: #6b0909;
+}
+#ans-title, #corr-title{
+    padding-left: 10%; 
+}
+ul {
+    list-style-type: circle;
+    font-size: 20px;
 }

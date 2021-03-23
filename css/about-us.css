@@ -68,13 +68,6 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
 .dev-card:hover .img-container .dp {
     border-radius:10%;
 }
@@ -146,4 +139,9 @@ body {
   
   .media-btns a:not(:last-child) {
     border-bottom: none;
+  }
+  
+  .row{
+    height: 700px;
+
   }
