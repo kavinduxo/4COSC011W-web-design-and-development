@@ -1,5 +1,5 @@
 let groupMemebers = ["Sadesh Surendra",
-    "Kavindu Gunathilake",
+    "Kavindu Supunsara",
     "Ravindu Rasanjana",
     "Infaz Rumy"];
 
@@ -37,4 +37,4 @@ function typewriter()
 typewriter();
 setTimeout(function(){
     window.location.href = './html/home.html';
-}, 9000);
+}, 10000);

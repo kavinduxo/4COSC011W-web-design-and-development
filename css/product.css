@@ -132,9 +132,11 @@ body {
 }
 
 .product-title {
-    margin-left: 250px;
     color: #222121;
-    display: inline-block;
+
+    display: inline;
+    margin-left: 250px;
+    padding-right: 50px;
     font-size: 34px;
     font-family: 'Bentham', serif;
 }
@@ -143,20 +145,14 @@ body {
     color: #2f2b2b;
 }
 .product-cart {
-    display: inline-block;
+    display: inline;
     margin-left: 500px;
 }
 
 .foot-lift {
-    margin-bottom: 140px;
+    margin-bottom: 200px;
 }
 
 .cart {
     margin-top: 50px;
-}
-
-.nav-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
