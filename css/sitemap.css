@@ -1,9 +1,12 @@
+/* styles of the sitemap */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* hiding the scrollbar */
 body {
     overflow: hidden;
 }
@@ -32,26 +35,31 @@ line {
     height: 100vh;
 }
 
+/* gradiant 1 first point color */
 #grad1-stop1 {
     stop-color: #9FEDD7;
     stop-opacity: 1;
 }
 
+/* gradiant 1 second point color */
 #grad1-stop2 {
     stop-color: #026670;
     stop-opacity: 1;
 }
 
+/* gradiant 2 first point color */
 #grad2-stop1 {
     stop-color: #FCE181;
     stop-opacity: 1;
 }
 
+/* gradiant 2 second point color */
 #grad2-stop2 {
     stop-color: #FEF9C7;
     stop-opacity: 1;
 }
 
+/* text styles changes when hovering the rectangle */
 #subPagesGroup g:hover g text,
 #subPagesGroup g:hover text,
 #presentationPageGroup:hover g text,
@@ -62,6 +70,7 @@ line {
     fill: #026670;
 }
 
+/* rectangle styles changes when hovering plus focusing the rectangle */
 #subPagesGroup g:hover rect,
 #subPagesGroup g:focus rect,
 #presentationPageGroup:hover rect,
