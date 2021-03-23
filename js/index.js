@@ -37,4 +37,4 @@ function typewriter()
 typewriter();
 setTimeout(function(){
     window.location.href = './html/home.html';
-}, 9000);
+}, 90000000);

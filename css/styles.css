@@ -31,6 +31,18 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    display: flex;
+
+}
+
+.logo img {
+    height: 8vh;
+}
+
+.logo h4 {
+    margin-top: 12%;
+    font-family: 'Abhaya Libre', serif;
+
 }
 
 .nav-links {
