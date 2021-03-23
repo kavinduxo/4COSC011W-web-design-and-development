@@ -3,12 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Sitemap</title>
+        <!-- styles -->
         <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/sitemap.css">
     </head>
 
     <body>
+        <!-- navbar -->
         <nav>
             <div class="logo">
                 <h4><a href="../index.html">SERANDIB</a></h4>
@@ -22,7 +24,10 @@
                 <li><a href="product-page.html">Shop</a> </li>
             </ul>
         </nav>
+
+        <!-- svg sitemap -->
         <svg id="svgSitemap">
+            <!-- color gradiants -->
             <defs>
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop id="grad1-stop1" offset="0%" />
@@ -35,6 +40,7 @@
                 </linearGradient>
             </defs>
 
+            <!-- presentation page rectangle -->
             <g id="presentationPageGroup">
                 <a href="../index.html">
                     <rect x="44%" y="6%"/>
@@ -42,6 +48,7 @@
                 </a>
             </g>
 
+            <!-- homepage rectangle -->
             <g id="homePageGroup">
                 <a href="home.html">
                     <rect x="44%" y="22%"/>
@@ -51,62 +58,75 @@
 
             <g id="subPagesGroup">
 
+                <!-- about page rectangle -->
                 <g id="aboutGroup">
                     <a href="about-us.html">
-                        <rect x="4%" y="38%"/>
-                        <text x="10%" y="43%">About</text>
+                        <rect x="8%" y="38%"/>
+                        <text x="14%" y="43%">About</text>
                     </a>
                 </g>
 
+                <!-- destinations page rectangle -->
                 <g id="destinationsGroup">
                     <a href="destinations.html">
-                        <rect x="20%" y="38%"/>
-                        <text x="26%" y="43%">Destinations</text>
+                        <rect x="26%" y="38%"/>
+                        <text x="32%" y="43%">Destinations</text>
                     </a>
                 </g>
 
+                <!-- quiz page rectangle -->
                 <g id="quizGroup">
                     <a href="quiz.html">
-                        <rect x="36%" y="38%"/>
-                        <text x="42%" y="43%">Quiz</text>
+                        <rect x="44%" y="38%"/>
+                        <text x="50%" y="43%">Quiz</text>
                     </a>
                 </g>
 
+                <!-- product page rectangle -->
                 <g id="productGroup">
                     <a href="product-page.html">
-                        <rect x="52%" y="38%"/>
-                        <text x="58%" y="43%">Shop</text>
+                        <rect x="62%" y="38%"/>
+                        <text x="68%" y="43%">Shop</text>
                     </a>
                 </g>
 
-                <g id="cartGroup">
-                    <a href="cart.html">
-                        <rect x="68%" y="38%"/>
-                        <text x="74%" y="43%">Cart</text>
-                    </a>
-                </g>
-
+                <!-- form page rectangle -->
                 <g id="formGroup">
                     <a href="form.html">
-                        <rect x="84%" y="38%"/>
-                        <text x="90%" y="43%">Form</text>
+                        <rect x="80%" y="38%"/>
+                        <text x="86%" y="43%">Form</text>
                     </a>
                 </g>
 
+                <!-- cart page rectangle -->
+                <g id="cartGroup">
+                    <a href="cart.html">
+                        <rect x="62%" y="54%"/>
+                        <text x="68%" y="59%">Cart</text>
+                    </a>
+                </g>
             </g>
 
+            <!-- presentation to home line -->
             <line x1="50%" y1="14%" x2="50%" y2="22%"/>
-            <line x1="50%" y1="30%" x2="50%" y2="34%"/>
-            <line x1="10%" y1="34%" x2="90%" y2="34%"/>
-            <line x1="10%" y1="34%" x2="10%" y2="38%"/>
-            <line x1="26%" y1="34%" x2="26%" y2="38%"/>
-            <line x1="42%" y1="34%" x2="42%" y2="38%"/>
-            <line x1="58%" y1="34%" x2="58%" y2="38%"/>
-            <line x1="74%" y1="34%" x2="74%" y2="38%"/>
-            <line x1="90%" y1="34%" x2="90%" y2="38%"/>
+            <!-- home to quiz line -->
+            <line x1="50%" y1="30%" x2="50%" y2="38%"/>
+            <!-- horizontal line between home and other sub pages -->
+            <line x1="14%" y1="34%" x2="86%" y2="34%"/>
+            <!-- horizontal line to about line -->
+            <line x1="14%" y1="34%" x2="14%" y2="38%"/>
+            <!-- horizontal line to destinations line -->
+            <line x1="32%" y1="34%" x2="32%" y2="38%"/>
+            <!-- horizontal line to shop line -->
+            <line x1="68%" y1="34%" x2="68%" y2="38%"/>
+            <!-- horizontal line to form line -->
+            <line x1="86%" y1="34%" x2="86%" y2="38%"/>
+            <!-- shop to cart line -->
+            <line x1="68%" y1="46%" x2="68%" y2="54%"/>
 
         </svg>
 
+        <!-- footer -->
         <footer>
             <div class="social-media">
                 <i class="fab fa-facebook-square fa-3x"></i>
