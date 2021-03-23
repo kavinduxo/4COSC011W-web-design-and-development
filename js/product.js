@@ -1,84 +1,89 @@
 let products = [
     {
-        productID: 'jewel-001',
+        productTag: 'kandian-jewel',
         productName : 'Kandian Jewel',
         productPrice: 18,
         productImage: 'img-1.jpg',
         productsInCart: 0
     },
     {
-        productID: 'jewel-002',
+        productTag: 'jaffna-beauty',
         productName : 'Jaffna Beauty',
         productPrice: 20,
         productImage: 'img-2.jpg',
         productsInCart: 0
     },
     {
-        productID: 'jewel-003',
-        productName : 'Tangalle Elegant',
+        productTag: 'galle-elegant',
+        productName : 'Galle Elegant',
         productPrice: 15,
         productImage: 'img-3.jpg',
         productsInCart: 0
     },
     {
-        productID: 'jewel-004',
+        productTag: 'mirissa-glory',
         productName : 'Mirissa Glory',
         productPrice: 22,
         productImage: 'img-4.jpg',
         productsInCart: 0
+    },
+    {
+        productTag: 'jaffna-sarom',
+        productName : 'Jaffna Sarom',
+        productPrice: 30,
+        productImage: 'img-5.jpg',
+        productsInCart: 0
+    },
+    {
+        productTag: 'colombo-men',
+        productName : 'Colombo Men',
+        productPrice: 17,
+        productImage: 'img-6.jpg',
+        productsInCart: 0
     }
+
 ]
 
-
-//Getting all the product cards button
 let productList = document.querySelectorAll('.product-price-btn button');
 
-//on click of a particular button select the item from products list based on the index of the productList and pass the product to the
-//respective functions
 for(let i = 0; i < productList.length; i++){
+    onLoadCartItems();
     productList[i].addEventListener("click", () => {
         productsInCart(products[i]);
         totalCartCost(products[i]);
+        onLoadCartItems();
     });
 }
 
+export function productsInCart(product, action){
 
-/*
-* On Click of the button Add the product to the cart
-* @param product - product that is required pass to setNumberOfProducts()
-*/
-function productsInCart(product){
-
+    //Number of total products in the cart
     let productQuantity = sessionStorage.getItem('productQuantity');
     productQuantity = parseInt(productQuantity);
 
-    if(productQuantity) {
+    //list of the products in the cart
+    let totalProducts = sessionStorage.getItem('productsInCart');
+    totalProducts = JSON.parse(totalProducts);
+
+    if(action) {
+        sessionStorage.setItem('productQuantity', productQuantity - 1);
+    }else if (productQuantity) {
         sessionStorage.setItem('productQuantity', productQuantity + 1);
-        document.querySelector('.cart-items').textContent = productQuantity + 1;
     }else {
         sessionStorage.setItem('productQuantity', 1);
-        document.querySelector('.cart-items').textContent = 1;
     }
     setNumberOfProducts(product);
 }
 
-
-/*
-* On loading the product page set the cart items to the selected items
-*
-*/
 function onLoadCartItems() {
     let productQuantity = sessionStorage.getItem('productQuantity');
 
     if(productQuantity){
-        document.querySelector('.cart-items').textContent = productQuantity;
+        document.getElementById('cart-items').textContent = productQuantity;
     }
 }
 
-/*
-* On Click of the button Add the product to the cart
-* @param product - update the number of products in cart
-*/
+
 function setNumberOfProducts(product) {
 
     let cartItems = sessionStorage.getItem('productsInCart');
@@ -87,40 +92,37 @@ function setNumberOfProducts(product) {
     if(cartItems != null) {
 
         //Check whether the selected item is not in the productsInCart if not then add the product
-        if(cartItems[product.productName] === undefined){
+        if(cartItems[product.productTag] === undefined){
             cartItems = {
                 ...cartItems,
-                [product.productName] : product
+           [product.productTag] : product
+
             }
         }
-        cartItems[product.productName].productsInCart += 1;
+        cartItems[product.productTag].productsInCart += 1;
 
     } else {
         product.productsInCart = 1;
         cartItems = {
-            [product.productName] : product
+         [product.productTag] : product
+
         }
     }
-
     sessionStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
+export function totalCartCost(product, action){
 
-/*
-* On Click of the button Add the product to the cart
-* @param product - update the number of products in cart
-*/
-function totalCartCost(product){
     let cartCost = sessionStorage.getItem('totalCartCost');
 
-    if(cartCost != null) {
-        sessionStorage.setItem('totalCartCost', parseInt(cartCost) + product.productPrice);
-    }else {
-        sessionStorage.setItem('totalCartCost', product.productPrice);
+    if(action) {
+        cartCost = parseInt(cartCost)
+        sessionStorage.setItem("totalCartCost", cartCost - product.productPrice);
+    } else if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+        sessionStorage.setItem("totalCartCost", cartCost + product.productPrice);
+    } else {
+        sessionStorage.setItem("totalCartCost", product.productPrice);
     }
 }
-
-
-onLoadCartItems();
-
 

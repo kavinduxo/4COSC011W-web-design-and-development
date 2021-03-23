@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #fdf1ec;
+    background-color: #ebf0d8;
+    position: absolute;
 }
 
 .cards {
@@ -37,7 +44,7 @@ body {
 
 .product-text {
     height: 300px;
-    width: 327px;
+    width: 300px;
 }
 
 .product-text h1 {
@@ -63,8 +70,9 @@ body {
 }
 
 .product-text p {
+    text-align: justify;
     height: 125px;
-    margin: 0 0 0 38px;
+    margin: 0 10px 0 38px;
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
     line-height: 1.7em;
@@ -121,4 +129,30 @@ body {
 
 .product-price-btn button:hover {
     background-color: #79b0a1;
+}
+
+.product-title {
+    color: #222121;
+
+    display: inline;
+    margin-left: 250px;
+    padding-right: 50px;
+    font-size: 34px;
+    font-family: 'Bentham', serif;
+}
+
+#cart-items {
+    color: #2f2b2b;
+}
+.product-cart {
+    display: inline;
+    margin-left: 500px;
+}
+
+.foot-lift {
+    margin-bottom: 200px;
+}
+
+.cart {
+    margin-top: 50px;
 }

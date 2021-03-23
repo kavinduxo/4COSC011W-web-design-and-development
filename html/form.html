@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Serandib</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/form.css">
+    <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">About</a> </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About</a> </li>
+            <li><a href="destinations.html">Destinations</a></li>
             <li><a href="#">Quiz</a> </li>
             <li><a href="product-page.html">Shop</a> </li>
-            <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
         </ul>
     </nav>
 
@@ -30,19 +30,19 @@
 
         <div class="left">
             <div class="item">
-                <div class="label"><span>*</span> Name:</div>
+                <div class="label"><span class="required">*</span> Name:</div>
                 <input class="input" type="text" id="txt-name" placeholder="Enter your name" />
             </div>
             <div class="item">
-                <div class="label"><span>*</span> Email Address:</div>
+                <div class="label"><span class="required">*</span> Email Address:</div>
                 <input class="input" type="email" id="txt-email" placeholder="Enter your email" />
             </div>
             <div class="item">
-                <div class="label"><span>*</span> Query Subject:</div>
+                <div class="label"><span class="required">*</span> Query Subject:</div>
                 <input class="input" type="text" id="txt-subject" placeholder="Enter query subject" />
             </div>
             <div class="item">
-                <div class="label"><span>*</span> Query Details:</div>
+                <div class="label"><span class="required">*</span> Query Details:</div>
                 <textarea class="input-area" id="txt-query"></textarea>
             </div>
         </div>
@@ -50,15 +50,15 @@
         <div class="right">
 
             <div class="theme item">
-                <label><span>*</span> Theme:</label><br><br>
+                <label><span class="required">*</span> Theme:</label><br><br>
 
-                <label for="travel" class="radio-label">Travel</label>
+                <label for="r1" class="radio-label">Travel</label>
                 <input id="r1" type="radio" name="theme" value="travel" /><br>
 
-                <label for="accommodation" class="radio-label">Accommodation</label>
+                <label for="r2" class="radio-label">Accommodation</label>
                 <input id="r2" type="radio" name="theme" value="accommodation" /><br>
 
-                <label for="meal" class="radio-label">Meal</label>
+                <label for="r3" class="radio-label">Meal</label>
                 <input id="r3" type="radio" name="theme" value="meal" /><br>
 
             </div>
@@ -90,8 +90,26 @@
             <button class="btns item" type="button" id="btn-send">Send</button>
         </div>
     </div>
+    <div class="before-footer">
 
-    <script type="text/javascript" src="../js/form.js"></script>
+    </div>
+
+
+    <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+
+        <p class="copyright"> The RISK <i class="far fa-copyright"></i> 2021</p>
+
+        <button class="btn" onclick="location.href='student-two.html'">Editors</button>
+
+    </footer>
+
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

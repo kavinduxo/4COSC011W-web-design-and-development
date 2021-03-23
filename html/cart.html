@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/cart.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi"
-        rel="stylesheet">
+    <link rel="stylesheet" href="../css/checkout-information.css">
+    <script src="https://kit.fontawesome.com/e1ddd89851.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bentham" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>
-        Products
+        Cart
     </title>
+
 </head>
 
 <body>
@@ -23,14 +24,13 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">About</a> </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About</a> </li>
+            <li><a href="destinations.html">Destinations</a></li>
             <li><a href="#">Quiz</a> </li>
             <li><a href="product-page.html">Shop</a> </li>
-            <li><a href="cart.html">Cart <span class="cart-items">0</span> </a> </li>
         </ul>
     </nav>
-
     <div class="container-products">
         <div class="product-header">
             <h5 class="product-title">PRODUCT</h5>
@@ -38,10 +38,71 @@
             <h5 class="quantity">QUANTITY</h5>
             <h5 class="total">TOTAL</h5>
         </div>
-        <div class="products"></div>
+        <div class="products">
+
+        </div>
     </div>
 
-    <script type="text/javascript" src="../js/cart.js"></script>
+    <br>
+
+    <div class="center-btn">
+        <button id="btn">Proceed to Checkout</button>
+    </div>
+
+    <div id="Modal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <form>
+                <ul class="checkout-form">
+                    <li><label>Full Name <span class="required">*</span></label>
+                            <input type="text" class="fname" placeholder="First" />
+                            <input type="text" class="lname" placeholder="Last" />
+
+                    </li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" class="mail" placeholder="E-Mail"/>
+
+                    </li>
+
+                    <li>
+                        <label>Contact Number <span class="required">*</span></label>
+                        <input type="text" class="telephone" placeholder="Contact Number"/>
+
+                    </li>
+
+                    <li>
+                        <label>Address<span class="required">*</span></label>
+                        <input type="text" class="address" placeholder="Address Line"/>
+
+                    </li>
+                    <li><input type="text" class="city" placeholder="City"/></li>
+
+                    <li>
+                        <input type="button" value="Place Order" id="confirm-order"/>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-instagram-square fa-3x"></i>
+            <i class="fab fa-twitter-square fa-3x"></i>
+            <i class="fab fa-linkedin fa-3x"></i>
+        </div>
+        <p class="copyright"> The RISK <i class="far fa-copyright"></i> 2021</p>
+        <button class="btn" onclick="location.href='student-one.html'">Editors</button>
+    </footer>
+
+    <script src="../js/checkout-information.js"></script>
+    <script type="module" src="../js/cart.js"></script>
+
 </body>
 
 </html>
