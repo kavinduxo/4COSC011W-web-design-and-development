@@ -56,7 +56,7 @@ function submitQue() {
             continue;
         } else {
             console.log("issue find" + index);
-            score++;
+            score--;
             wrongAns.push(index);
         }
         console.log("go loop");
@@ -64,17 +64,15 @@ function submitQue() {
 }
 
 function showResult() {
-    console.log("show result");
+
     hideContent("info");
     hideContent("quiz");
     showContent("result");
     result_box.classList.add("activeResult");
     for (var i = 0; i < correctAns.length; i++) {
         var ans = correctAns[i] + 1;
-
         var listItem = document.createElement("li");
         listItem.textContent = "Answer " + ans;
-
         ul.appendChild(listItem);
     }
 
@@ -83,16 +81,20 @@ function showResult() {
         var cAns = corrAns[wrongAns[i]];
         var listItem2 = document.createElement("li");
         listItem2.textContent = "Correct Answer " + cAns;
-
         ul2.appendChild(listItem2);
     }
-
-    document.getElementById("marks").innerHTML = "You Scored " + score + " marks... <br/>" + "You have taken " + timeTaken + " seconds.";
-    if (score >= 17) {
+    var points;
+    if (score < 0){
+        points = 0;
+    }else{
+        points = score;
+    }
+    document.getElementById("marks").innerHTML = "You Scored " + points + " marks... <br/>" + "You have taken " + timeTaken + " seconds.";
+    if (points >= 12) {
         document.getElementById("result").style.background = "#99ff99";
         document.getElementById("res-title").innerHTML = "Great work..! Congrats.."
     }
-    else if (score >= 12) {
+    else if (score >= 5) {
         document.getElementById("result").style.background = "#ffff80";
         document.getElementById("res-title").innerHTML = "Up to the level..! Congrats.."
     }

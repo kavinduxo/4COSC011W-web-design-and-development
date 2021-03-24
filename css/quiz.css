@@ -191,7 +191,7 @@ footer button.show{
     border-radius: 5px;
     display: flex;
     width: 50%;
-    height: 90%;
+    height: 70%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -262,7 +262,7 @@ footer button.show{
     padding-top: 2%;
 }
 
-.scroll-div { 
+#quiz .scroll-div { 
     margin:4px, 4px; 
     padding:4px; 
     width: 100%; 
@@ -270,6 +270,27 @@ footer button.show{
     overflow-x: hidden; 
     overflow-y: scroll; 
     text-align:justify; 
+} 
+
+#info .scroll-div { 
+    margin:4px, 4px; 
+    padding:4px; 
+    width: 98%; 
+    height: 70%; 
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    text-align:justify; 
+} 
+
+#result .scroll-div { 
+    margin:4px, 4px; 
+    padding:4px; 
+    width: 98%; 
+    height: 70%; 
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    text-align:justify; 
+    pointer-events: auto;
 } 
 
 #marks{
