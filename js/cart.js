@@ -2,8 +2,8 @@ import { productsInCart, totalCartCost } from './product.js';
 
 function onLoadCartItems() {
     let productQuantity = sessionStorage.getItem('productQuantity');
-
-    if(parseInt(productQuantity) === 0){
+    
+    if(parseInt(productQuantity) === 0 || productQuantity === null){
         document.getElementById("btn").disabled = true;
     }
 }
