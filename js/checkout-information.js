@@ -21,7 +21,7 @@ window.onclick = function(event) {
 
 let confirmOrder = document.getElementById('confirm-order');
 
-let isNullFieldsAvailable, isContactNumberValid, isEmailValid;
+let isNullFieldsAvailable, isContactNumberValid, isEmailValid, isCreditCardValid, isCvvNumbeValid;
 
 confirmOrder.addEventListener('click', () => {
     ValidateCustomerInformation();
@@ -35,6 +35,9 @@ function ValidateCustomerInformation() {
     let firstName = document.querySelector('.fname').value;
     let address = document.querySelector('.address').value;
     let contactNumber = document.querySelector('.telephone').value;
+    let cardNumber = document.querySelector('.card').value;
+    let cvvNumber = document.querySelector('.cvv').value;
+    
 
     isNullFieldsAvailable = checkForNullValues(firstName, lastName, email, contactNumber, city, address);
 
@@ -47,9 +50,17 @@ function ValidateCustomerInformation() {
         if(!isEmailValid) {
             alert('Invalid Email');
         }
+        isCreditCardValid = validateCardNumber(cardNumber);
+        if(!isCreditCardValid) {
+            alert('Invalid Card Information');
+        }
+        isCvvNumbeValid = validateCvvNumber(cvvNumber);
+        if(!isCvvNumbeValid) {
+            alert('Invalid Card Information');
+        }
     }
 
-        if(isNullFieldsAvailable && isContactNumberValid && isEmailValid) {
+        if(isNullFieldsAvailable && isContactNumberValid && isEmailValid && isCreditCardValid && isCvvNumbeValid) {
             displayInvoice(firstName, lastName, email, contactNumber);
         }
 }
@@ -79,6 +90,16 @@ function validateContactNumber(contactNumber) {
     return !(contactNumber.length !== 10 || isNaN(contactNumber));
 }
 
+function validateCardNumber(contactNumber) {
+    return !(contactNumber.length !== 10 || isNaN(contactNumber));
+}
+
+
+function validateCvvNumber(contactNumber) {
+    return !(contactNumber.length !== 3 || isNaN(contactNumber));
+}
+
+
 function displayInvoice(firstName, lastName, email, contactNumber) {
     let productInvoice = document.querySelector('.modal-content')
 
@@ -105,7 +126,6 @@ function displayInvoice(firstName, lastName, email, contactNumber) {
             
 `;
         })
-
 
 }
 
