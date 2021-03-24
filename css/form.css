@@ -77,7 +77,7 @@ body {
 .summary {
     border: #026670 1px solid;
     margin: 0 10% 5% 10%;
-    /* text-align: center; */
+    text-align: center;
     padding: 5% 0 0 0;
     font-size: 20px;
 }
@@ -87,21 +87,14 @@ body {
     display: inline-block
 }
 
-.s-input {
-    width: 300px;
-    height: 30px;
-    margin: 0 0 2% 0;
-}
-
-.s-input-area {
-    width: 300px;
-    height: 80px;
-}
-
 .before-footer {
     height: 50px;
 }
 
-.s-content {
-    text-align: center;
+.s-input{
+    margin-bottom: 2%;
+}
+
+.title{
+    font-size: large;
 }
