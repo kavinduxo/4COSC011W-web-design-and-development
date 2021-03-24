@@ -20,11 +20,11 @@ function checkedValue() {
 }
 
 function setSummary() {
-    document.getElementById("s-name").value = document.getElementById("txt-name").value;
-    document.getElementById("s-email").value = document.getElementById("txt-email").value;
-    document.getElementById("s-subject").value = document.getElementById("txt-subject").value;
-    document.getElementById("s-query").value = document.getElementById("txt-query").value;
-    document.getElementById("s-theme").value = checkedValue();
+    document.getElementById("s-name").innerHTML = document.getElementById("txt-name").value;
+    document.getElementById("s-email").innerHTML = document.getElementById("txt-email").value;
+    document.getElementById("s-subject").innerHTML = document.getElementById("txt-subject").value;
+    document.getElementById("s-query").innerHTML = document.getElementById("txt-query").value;
+    document.getElementById("s-theme").innerHTML = checkedValue();
 }
 
 function validateEmail(email) {
