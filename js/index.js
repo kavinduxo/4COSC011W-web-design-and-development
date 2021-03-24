@@ -1,5 +1,5 @@
 let groupMemebers = ["Sadesh Surendra",
-    "Kavindu Supunsara",
+    "Kavindu Gunathilake",
     "Ravindu Rasanjana",
     "Infaz Rumy"];
 
